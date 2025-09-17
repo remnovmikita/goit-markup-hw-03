@@ -5,6 +5,9 @@ body{
     margin: 0;
     width: 1440px;
 }
+main{
+    flex-grow: 1;
+}
 h1, h2,h3, p{
     margin: 0;
 }
@@ -27,6 +30,9 @@ header ul li a:hover{
 .address-menu li a:focus{
     color: #404bbf;
 }
+p{
+    color: #434455;
+}
 h2, h3{
     color: #2E2F42;
 }
@@ -43,7 +49,7 @@ h2, h3{
  overflow: hidden;
 }
 .container{
-    width: 1158px;
+    max-width: 1148px;
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -104,9 +110,11 @@ header .container{
 }
 /* SECTION 1 Start  */
 
+.section_one{
+    background-color: #2E2F42;
+}
 .section_one .container{
     text-align: center;
-    background-color: #2E2F42;
     padding-bottom: 188px;
     padding-top: 188px;
     
@@ -133,6 +141,7 @@ header .container{
     font-size: 56px;
     line-height: 1.07143;
     letter-spacing: 0.02em;
+    padding: 0 316px;
     
     
 }
@@ -146,13 +155,12 @@ header .container{
 
 /* SECTION 1 End   */
 /*  SECTION 2 Start   */
-.items{
-    display: block;
+.section_two .container{
+    display: flex;
 }
 .about-menu{
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    gap: 24px;
 }
 .aboutmenu-zag{
     font-weight: 500;
@@ -160,6 +168,7 @@ header .container{
    line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    
 }
 .about-menu-text{
     font-weight: 400;
@@ -167,6 +176,19 @@ header .container{
      line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-top: 8px;
+}
+
+.about-menu .items{
+    width: calc((100%-72px) / 4);
+}
+
+/* SECTION 2 END
+    SECTION 3 Start */
+.team-ul{
+    display: flex;
+    gap: 24px;
+    padding-top: 72px;
 }
 .maintext{
     font-weight: 700;
@@ -177,14 +199,10 @@ header .container{
     color: #2E2F42;
     text-transform: capitalize;
 }
-.about-menu li{
-    width: calc((100%-72px) / 4);
-}
-
-/* SECTION 2 END
-    SECTION 3 Start */
 .team-li{
-    background-color: #FFFFFF;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+    width: calc((100% - 72px) / 4);
 }
 .team-name{
     font-weight: 500;
@@ -193,6 +211,7 @@ header .container{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
+    padding-top: 32px;
 }
 .team-text{
     font-weight: 400;
@@ -201,13 +220,19 @@ header .container{
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    padding-top: 8px;
+    padding-bottom: 32px;
 }
 .section_three{
     background-color: #F4F4FD;
 }
-
-p{
-    color: #434455;
+/*  SECTION 3 END
+    SECTION 4 START*/
+.portfolio-ul{
+    padding-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 .portfolio{
     font-weight: 700;
@@ -224,6 +249,7 @@ p{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    padding-top: 32px;
 }
 .portfolio-text{
     font-weight: 400;
@@ -231,6 +257,20 @@ p{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-top: 8px;
+    padding-bottom: 80px;
+}
+.section_four{
+    background-color:#FFFFFF;
+}
+/* SECTION 4 END
+    Footer START*/
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto; 
 }
 .logo-footer{
     font-weight: 700;
@@ -239,20 +279,22 @@ p{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #F4F4FD;
+    padding-top: 100px;
 }
 .footer-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 16px;
+    width: 264px;
 }
 
-.section_four{
-    background-color:#FFFFFF;
-}
+
 footer{
     background-color: #2E2F42;
 }
 footer p{
     color: #F4F4FD;
 }
+/* FOOTER END*/
