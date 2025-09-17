@@ -5,6 +5,9 @@ body{
     margin: 0;
     width: 1440px;
 }
+img{
+    display: block;
+}
 main{
     flex-grow: 1;
 }
@@ -47,15 +50,16 @@ h2, h3{
  clip-path: inset(100%);
  clip: rect(0 0 0 0);
  overflow: hidden;
+ margin-bottom: 8px;
 }
 .container{
-    max-width: 1148px;
+    width: 1148px;
     margin: 0 auto;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 0 15px;
 }
+/* HEADER START*/
 
-header .container{
+.header-main .container{
     display: flex;
     justify-content: space-around;
     padding-top: 24px;
@@ -65,7 +69,8 @@ header .container{
 }
 .navigation{
     display: flex;
-    gap: 76px;
+    align-items: center;
+    
 }
 .navigation-menu, .address-menu{
     display: flex;
@@ -79,6 +84,7 @@ header .container{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    margin-right: 76px;
     
 }
 .logo-studio{
@@ -91,7 +97,7 @@ header .container{
     font-size: 16px;
   line-height: 1.5;
     letter-spacing: 0.02em;
-    
+    padding: 24px 0;
 }
 .navigation-menu-a:focus{
     color: #404bbf;
@@ -104,7 +110,6 @@ header .container{
     letter-spacing: 0.02em;
     font-style: normal;
 }
-
 .header-adress{
     font-style: normal;
 }
@@ -112,12 +117,7 @@ header .container{
 
 .section_one{
     background-color: #2E2F42;
-}
-.section_one .container{
-    text-align: center;
-    padding-bottom: 188px;
-    padding-top: 188px;
-    
+    padding: 188px 0;
 }
 .section_one-btn{
     font-weight: 500;
@@ -126,7 +126,10 @@ header .container{
     letter-spacing: 0.04em;
     color: #FFFFFF;
     cursor: pointer;
-    
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none; 
 }
 .container button{
     margin-top: 48px;
@@ -135,15 +138,17 @@ header .container{
     padding: 16px 32px;
     
 }
+.section_one .container{
+ padding: 0 326px;
+}
+`
 .maintextone{
     color: #FFFFFF;
     font-weight: 700px;
     font-size: 56px;
     line-height: 1.07143;
     letter-spacing: 0.02em;
-    padding: 0 316px;
-    
-    
+    max-width: 496px;
 }
 .section_one-btn:hover{
     background-color: #404BBF;
@@ -155,6 +160,9 @@ header .container{
 
 /* SECTION 1 End   */
 /*  SECTION 2 Start   */
+.section_two{
+    padding: 120px 0;
+}
 .section_two .container{
     display: flex;
 }
@@ -188,7 +196,7 @@ header .container{
 .team-ul{
     display: flex;
     gap: 24px;
-    padding-top: 72px;
+    
 }
 .maintext{
     font-weight: 700;
@@ -198,10 +206,12 @@ header .container{
     text-align: center;
     color: #2E2F42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 .team-li{
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
+    border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
 }
 .team-name{
@@ -211,7 +221,7 @@ header .container{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
-    padding-top: 32px;
+    margin-bottom: 8px;
 }
 .team-text{
     font-weight: 400;
@@ -220,19 +230,26 @@ header .container{
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
-    padding-top: 8px;
-    padding-bottom: 32px;
+}
+.carts-team{
+    padding: 32px 0;
+    width: 232px;
 }
 .section_three{
+    padding: 120px 0;
     background-color: #F4F4FD;
 }
 /*  SECTION 3 END
     SECTION 4 START*/
+.section_four{
+    background-color:#FFFFFF;
+    padding: 120px 0;
+}
 .portfolio-ul{
-    padding-top: 72px;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    
 }
 .portfolio{
     font-weight: 700;
@@ -260,8 +277,14 @@ header .container{
     padding-top: 8px;
     padding-bottom: 80px;
 }
-.section_four{
-    background-color:#FFFFFF;
+.carts-portfolio{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
+.portfolio-li{
+    width: calc((100% - 48px) / 3);
 }
 /* SECTION 4 END
     Footer START*/
@@ -272,27 +295,38 @@ footer .container{
     max-width: 1200px;
     margin: 0 auto; 
 }
-.logo-footer{
+
+.logo-footer-start{
     font-weight: 700;
     font-size: 18px;
     line-height: 1.16667;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #F4F4FD;
-    padding-top: 100px;
+    
 }
 .footer-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-top: 16px;
     width: 264px;
 }
+.logo-footer{
+    font-family: Raleway, sans-serif;
+   font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+    display: inline-block;
+    margin-bottom: 16px;
+}
 
-
-footer{
+.fotter{
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 footer p{
     color: #F4F4FD;
