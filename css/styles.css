@@ -53,12 +53,14 @@ h2, h3{
  margin-bottom: 8px;
 }
 .container{
-    width: 1148px;
+    width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
 /* HEADER START*/
-
+.header-main{
+    border-bottom: 1px solid #e7e9fc;
+}
 .header-main .container{
     display: flex;
     justify-content: space-around;
@@ -174,6 +176,7 @@ h2, h3{
    line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
     
 }
 .about-menu-text{
@@ -247,6 +250,7 @@ h2, h3{
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
+     row-gap: 48px;
     
 }
 .portfolio{
@@ -265,6 +269,7 @@ h2, h3{
     letter-spacing: 0.02em;
     color: #2E2F42;
     padding-top: 32px;
+    margin-bottom: 8px;
 }
 .portfolio-text{
     font-weight: 400;
@@ -283,6 +288,7 @@ h2, h3{
 }
 .portfolio-li{
     width: calc((100% - 48px) / 3);
+   
 }
 /* SECTION 4 END
     Footer START*/
@@ -301,7 +307,8 @@ footer .container{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #F4F4FD;
-    
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .footer-text{
     font-weight: 400;
@@ -318,8 +325,6 @@ footer .container{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
-    display: inline-block;
-    margin-bottom: 16px;
 }
 
 .fotter{
