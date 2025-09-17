@@ -39,6 +39,7 @@ p{
 h2, h3{
     color: #2E2F42;
 }
+
 .visually-hidden {
  position: absolute;
  width: 1px;
@@ -50,12 +51,12 @@ h2, h3{
  clip-path: inset(100%);
  clip: rect(0 0 0 0);
  overflow: hidden;
- margin-bottom: 8px;
 }
 .container{
     width: 1158px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 /* HEADER START*/
 .header-main{
@@ -325,6 +326,7 @@ footer .container{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    display: inline-block;
 }
 
 .fotter{
