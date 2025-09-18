@@ -68,6 +68,7 @@ h2, h3{
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
+    padding: 0 15px;
    
 }
 .navigation{
@@ -300,7 +301,7 @@ footer .container{
     max-width: 1200px;
     margin: 0 auto; 
 }
-footer a{
+a{
     display: inline-block;
 }
 .logo-footer-start{
